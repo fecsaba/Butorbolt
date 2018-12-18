@@ -1,0 +1,65 @@
+﻿<Window x:Class="_2018_12_10_Bútorok.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2018_12_10_Bútorok"
+        mc:Ignorable="d"
+        Title="Bútorbolt" Height="350" Width="525" FontSize="16">
+    <Window.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="Width" Value="120"/>
+            <Setter Property="Height" Value="25"/>
+            <Setter Property="Margin" Value="25 0 25 0"/>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120"/>
+            <RowDefinition/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+        <GroupBox Header="Keresés" Margin="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="110"/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Label Content="Alapanyag:"></Label>
+                <Label Content="Megnevezés:" Grid.Row="1"></Label>
+                <ComboBox x:Name="cboAlapanyagKeres" Grid.Column="1" Height="25" 
+                          MaxWidth="250">
+
+                    <ComboBox.Foreground>
+                        <SolidColorBrush Color="Black" Opacity="0.5"/>
+                    </ComboBox.Foreground>
+                </ComboBox>
+                <TextBox x:Name="txtMegnevezesKeres" Grid.Column="1" Grid.Row="1" Height="25" 
+                          MaxWidth="250"/>
+                <Button x:Name="btnKereses" Content="Keresés" Grid.RowSpan="2" 
+                        Grid.Column="2" Height="35" Width="140" Click="btnKereses_Click"/>
+            </Grid>
+        </GroupBox>
+        <DataGrid x:Name="grdLista" Grid.Row="1" IsReadOnly="True" AutoGenerateColumns="False"
+                  ItemsSource="{Binding}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Bútor neve" Width="200" 
+                                    Binding="{Binding Megnevezes}"/>
+                <DataGridTextColumn Header="Alapanyag neve" Width="200" 
+                                    Binding="{Binding AlapanyagNev}"/>
+                <DataGridTextColumn Header="Méret" Width="100" 
+                                    Binding="{Binding Meret}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name ="btnUj" Content="Új" Click="btnUj_Click"/>
+            <Button x:Name ="btnModositas" Content="Módosít" Click="btnModositas_Click"/>
+            <Button x:Name ="btnTorles" Content="Törlés" Click="btnTorles_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2018-12-10 Bútorok", "2018-12-10 Bútorok\2018-12-10 Bútorok.csproj", "{D664A493-58CF-4F90-8FD5-8FD8B101B38C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Butorok.Data", "2018-12-10 Butorok.Data\Butorok.Data.csproj", "{4363BA49-CAD3-43B7-9568-AAC3B80A2351}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D664A493-58CF-4F90-8FD5-8FD8B101B38C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D664A493-58CF-4F90-8FD5-8FD8B101B38C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D664A493-58CF-4F90-8FD5-8FD8B101B38C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D664A493-58CF-4F90-8FD5-8FD8B101B38C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4363BA49-CAD3-43B7-9568-AAC3B80A2351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4363BA49-CAD3-43B7-9568-AAC3B80A2351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4363BA49-CAD3-43B7-9568-AAC3B80A2351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4363BA49-CAD3-43B7-9568-AAC3B80A2351}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E32129F-7C12-4699-BAAA-A0C618F54580}
+	EndGlobalSection
+EndGlobal

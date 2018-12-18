@@ -1,0 +1,17 @@
+Hozzon létre adatbázist, amely egy bútoráruház kínálatát modellezi.
+Különböző alapanyagok (fa, fém, műanyag, papír)  -> kódtár
+
+Bútorokról nyilvántarjuk:
+- nevét
+- alapanyag (id)
+- méret (szöveges)
+- ár  (-> készüljünk arra, hogy valamikor EUR lesz) 2 tizedes pontossággal.
+
+---------------------------
+
+A programban meg kell jeleníteni: bútorok nevét, alapanyagát, méretét
+
+Keresni (szűkíteni) kell a listát: névre, alapanyag
+
+-> új, módosítani, törölni
+ 
